@@ -21,11 +21,11 @@ public class TextBoxTests {
         @Test
     void positiveFillTest() {
             open("/automation-practice-form");
-            $(By.cssSelector("#firstName")).setValue("Bogdan");
-            $(By.cssSelector("#lastName")).setValue("Shvets");
-            $(By.cssSelector("#userEmail")).setValue("Bogdan@mail.ru");
+            $("#firstName").setValue("Bogdan");
+            $("#lastName").setValue("Shvets");
+            $("#userEmail").setValue("Bogdan@mail.ru");
             $(byText("Male")).click();
-            $(By.cssSelector("#userNumber")).setValue("7412589632");
+            $("#userNumber").setValue("7412589632");
             $("#dateOfBirthInput").clear();
             $(".react-datepicker__month-select").selectOption("May");
             $(".react-datepicker__year-select").selectOption("1989");
