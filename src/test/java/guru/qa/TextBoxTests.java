@@ -34,7 +34,7 @@ public class TextBoxTests {
             $("#subjectsInput").setValue("Social Studies").pressEnter();
             $(byText("Music")).click();
             $(byText("Sports")).click();
-            $("#uploadPicture").uploadFile(new File("src/main/resources/KNPP1020.970.png"));
+            $("#uploadPicture").uploadFile(new File("src/main/resources/KNPP1020.970.jpg"));
             $("#currentAddress").setValue("Moscow region, Kraskovo county");
             $("#react-select-3-input").setValue("Haryana").pressEnter();
             $("#react-select-4-input").setValue("Panipat").pressEnter();
@@ -52,7 +52,7 @@ public class TextBoxTests {
                 $(".table-responsive").shouldHave(text("1989"));
                 $(".table-responsive").shouldHave(text("Maths"));
                 $(".table-responsive").shouldHave(text("Social Studies"));
-                $(".table-responsive").shouldHave(text("KNPP1020.970.png"));
+                $(".table-responsive").shouldHave(text("KNPP1020.970.jpg"));
                 $(".table-responsive").shouldHave(text("Moscow region, Kraskovo county"));
                 $(".table-responsive").shouldHave(text("Haryana"));
                 $(".table-responsive").shouldHave(text("Panipat"));
