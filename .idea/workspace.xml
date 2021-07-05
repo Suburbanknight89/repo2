@@ -10,7 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f12cfe6-cfaf-4bf3-9e2a-e932ffabe038" name="Default Changelist" comment="2. add png&#10;3. del  By.cssSelector" />
+    <list default="true" id="3f12cfe6-cfaf-4bf3-9e2a-e932ffabe038" name="Default Changelist" comment="2. add png&#10;3. del  By.cssSelector">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,11 +72,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Gradle.TextBoxTests.positiveFillTest">
+  <component name="RunManager" selected="Gradle.TextBoxTests">
     <configuration name="SearchTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -169,8 +171,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.TextBoxTests.positiveFillTest" />
         <item itemvalue="Gradle.TextBoxTests" />
+        <item itemvalue="Gradle.TextBoxTests.positiveFillTest" />
         <item itemvalue="JUnit.TextBoxTests.positiveFillTest" />
         <item itemvalue="Gradle.SearchTests" />
         <item itemvalue="Gradle.SearchTests.selenideSearchTest" />
@@ -250,30 +252,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="550" y="58" key="#Java/0.0.1920.1040@0.0.1920.1040" timestamp="1625346953771" />
-    <state x="440" y="94" key="#Project_Structure" timestamp="1625346402714">
+    <state x="440" y="94" key="#Project_Structure" timestamp="1625486531216">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1625346402714" />
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1625486531216" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1625340212585">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1625340212585" />
-    <state width="1877" height="336" key="GridCell.Tab.0.bottom" timestamp="1625385000299">
+    <state width="1877" height="336" key="GridCell.Tab.0.bottom" timestamp="1625486505372">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="336" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1625385000299" />
-    <state width="1877" height="336" key="GridCell.Tab.0.center" timestamp="1625385000298">
+    <state width="1877" height="336" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1625486505372" />
+    <state width="1877" height="336" key="GridCell.Tab.0.center" timestamp="1625486505372">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="336" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1625385000298" />
-    <state width="1877" height="336" key="GridCell.Tab.0.left" timestamp="1625385000298">
+    <state width="1877" height="336" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1625486505372" />
+    <state width="1877" height="336" key="GridCell.Tab.0.left" timestamp="1625486505372">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="336" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1625385000298" />
-    <state width="1877" height="336" key="GridCell.Tab.0.right" timestamp="1625385000298">
+    <state width="1877" height="336" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1625486505372" />
+    <state width="1877" height="336" key="GridCell.Tab.0.right" timestamp="1625486505372">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="336" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1625385000298" />
+    <state width="1877" height="336" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1625486505372" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1625347254977">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
