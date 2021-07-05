@@ -16,6 +16,7 @@ public class TextBoxTests {
         static void setup(){
             Configuration.baseUrl = "https://demoqa.com";
             Configuration.startMaximized = true;
+            
         }
 
         @Test
