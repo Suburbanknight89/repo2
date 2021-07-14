@@ -1,7 +1,7 @@
-package pages;
+package qa.guru.tests.pages;
 
 import com.codeborne.selenide.SelenideElement;
-import components.Calendar;
+import qa.guru.tests.components.Calendar;
 
 import java.io.File;
 
