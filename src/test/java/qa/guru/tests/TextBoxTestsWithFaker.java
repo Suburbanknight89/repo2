@@ -52,6 +52,7 @@ public class TextBoxTestsWithFaker {
                 selectState(state).
                 selectcity(city).submit();
 
+
             registrationPage.checkResultsTitle();
             registrationPage.checkResultsValue(firstName + " " + lastName)
                     .checkResultsValue(email)
