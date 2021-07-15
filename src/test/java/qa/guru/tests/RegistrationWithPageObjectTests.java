@@ -1,9 +1,9 @@
-package guru.qa;
+package qa.guru.tests;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
+
 import java.io.File;
 
 import static com.codeborne.selenide.Condition.text;
@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class TextBoxTests {
+public class RegistrationWithPageObjectTests {
     @BeforeAll
     static void setup(){
         Configuration.baseUrl = "https://demoqa.com";
@@ -21,41 +21,43 @@ public class TextBoxTests {
     @Test
     void positiveFillTest() {
         open("/automation-practice-form");
-        $("#firstName").setValue("Bogdan");
-        $("#lastName").setValue("Shvets");
-        $("#userEmail").setValue("Bogdan@mail.ru");
-        $(byText("Male")).click();
-        $("#userNumber").setValue("7412589632");
-        $("#dateOfBirthInput").clear();
-        $(".react-datepicker__month-select").selectOption("May");
+        $("#firstName").val("Bogdan");
+        $("#lastName").val("Shvets");
+        $("#userEmail").val("Bogdan@mail.ru");
+        $("[name=gender][value=Male]").parent().click();
+        $("#userNumber").val("7412589632");
+        $("#dateOfBirthInput").click();
+        $(".react-datepicker__month-select").selectOption("April");
         $(".react-datepicker__year-select").selectOption("1989");
-        $(".react-datepicker__day--028").click();
-        $("#subjectsInput").setValue("Maths").pressEnter();
-        $("#subjectsInput").setValue("Social Studies").pressEnter();
-        $(byText("Music")).click();
-        $(byText("Sports")).click();
+        $(".react-datepicker__day--028:not(.react-datepicker__day--outside-month)").click();
+        $("#subjectsInput").val("Maths").pressEnter();
+        $("#subjectsInput").val("Social Studies").pressEnter();
+        $("#hobbiesWrapper").$(byText("Reading")).click();
         $("#uploadPicture").uploadFile(new File("src/main/resources/KNPP1020.970.jpg"));
-        $("#currentAddress").setValue("Moscow region, Kraskovo county");
-        $("#react-select-3-input").setValue("Haryana").pressEnter();
-        $("#react-select-4-input").setValue("Panipat").pressEnter();
-        $("#submit").scrollTo();
-        $("#submit").click();
+        $("#currentAddress").val("Moscow region, Kraskovo county");
+        $("#state").click();
+        $("#stateCity-wrapper").$(byText("NCR")).click();
+        $("#city").click();
+        $("#stateCity-wrapper").$(byText("Delhi")).click();
+        $("#submit").scrollTo().click();
 
-        $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
+
+        $(".modal-title").shouldHave(text("Thanks for submitting the form"));
         $(".table-responsive").shouldHave(text("Bogdan"));
         $(".table-responsive").shouldHave(text("Shvets"));
         $(".table-responsive").shouldHave(text("Bogdan@mail.ru"));
         $(".table-responsive").shouldHave(text("Male"));
         $(".table-responsive").shouldHave(text("7412589632"));
         $(".table-responsive").shouldHave(text("28"));
-        $(".table-responsive").shouldHave(text("May"));
+        $(".table-responsive").shouldHave(text("April"));
         $(".table-responsive").shouldHave(text("1989"));
         $(".table-responsive").shouldHave(text("Maths"));
         $(".table-responsive").shouldHave(text("Social Studies"));
+        $(".table-responsive").shouldHave(text("Reading"));
         $(".table-responsive").shouldHave(text("KNPP1020.970.jpg"));
         $(".table-responsive").shouldHave(text("Moscow region, Kraskovo county"));
-        $(".table-responsive").shouldHave(text("Haryana"));
-        $(".table-responsive").shouldHave(text("Panipat"));
+        $(".table-responsive").shouldHave(text("NCR"));
+        $(".table-responsive").shouldHave(text("Delhi"));
 
     }
 
