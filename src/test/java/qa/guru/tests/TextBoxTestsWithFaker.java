@@ -51,10 +51,7 @@ public class TextBoxTestsWithFaker {
                 typeAdress(adress).
                 selectState(state).
                 selectcity(city).submit();
-    }
 
-        @Test
-        void assertsTest() {
             registrationPage.checkResultsTitle();
             registrationPage.checkResultsValue(firstName + " " + lastName)
                     .checkResultsValue(email)
